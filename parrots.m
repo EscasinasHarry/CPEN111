@@ -20,10 +20,10 @@ whos parrots;
 %%%and display the full intensity range gray-scale image using the imshow command
 uint8_gray = imagesc(parrots, [0, 255]); colormap(gray);
 figure(2), imshow(uint8_gray);
-whos uint8_gray;
+
 
 %Convert the true color image to a gray-scale image
 gray_parrots = rgb2gray(parrots);
 figure(3), imshow(gray_parrots);
-whos gray_parrots;
+
 
